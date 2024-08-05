@@ -606,3 +606,207 @@ button:hover {
     text-align: center;
     border-radius: 5px;
 }
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff9800;
+    margin: 0;
+    color: #333;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    background-color: #fff;
+    color: #ff9800;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.home-container {
+    padding: 100px 20px 20px; /* Add top padding to account for fixed header */
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #ff9800;
+    color: #333;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+#account-balance {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+}
+
+.transactions-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.transactions-section h3 {
+    margin: 0;
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#transactions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px; /* Adjust this height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ddd;
+}
+
+#transactions-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .main-header h1 {
+        font-size: 1.2em;
+    }
+
+    #account-balance {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+/* Chatbot styling */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ff9800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-icon img {
+    width: 50%;
+    height: 50%;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.chatbot-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.chatbot-header button {
+    background-color: #e68900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-messages {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.chatbot-messages p {
+    margin: 0 0 10px;
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 10px;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatbot-input button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.chatbot-input button:hover {
+    background-color: #e68900;
+}
+
+.thank-you-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
